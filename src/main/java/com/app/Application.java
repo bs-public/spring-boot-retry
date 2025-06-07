@@ -2,11 +2,13 @@ package com.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.retry.annotation.EnableRetry;
 
 @SpringBootApplication
-public class SpringBootRetryApplication {
+@EnableRetry
+public class Application {
 
   public static void main(String[] args) {
-    SpringApplication.run(SpringBootRetryApplication.class, args);
+    SpringApplication.run(Application.class, args);
   }
 }
